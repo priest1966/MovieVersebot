@@ -42,7 +42,7 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', ' '))
 CODE = (environ.get('CODE', 'https://graph.org/file/e2d9b5e15e15daafb64e8.jpg'))
 REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1c1a3cb814cd719ae3bd3.jpg https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split()
 
-#stream link shortner
+#stream link shortn
 STREAM_SITE = (environ.get('STREAM_SITE', 'omegalinks.in'))
 STREAM_API = (environ.get('STREAM_API', ''))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/howtoverify_97/3'))
