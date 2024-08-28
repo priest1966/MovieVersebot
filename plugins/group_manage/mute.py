@@ -26,7 +26,7 @@ async def mute_user(bot, message):
             await message.reply_text(
                 "👍🏻 "
                 f"{user_first_name}"
-                " Lavender's mouth is shut! 🤐"
+                " Lavender's mouth is shut!"
             )
             await bot.send_message(LOG_CHANNEL, text=f"**MUTE**\n\n**USER**: <a href='tg://user?id={user_id}'>{user_first_name}</a> \n\n**USER ID**:`{user_id}`\n\n**PERMISSIONS: MUTED**\n\nin **CHAT NAME**: {message.chat.title}\n**CHAT ID** `{message.chat.id}`\n\n\n**POWERD BY:** {temp.B_LINK}")
         else:
@@ -35,7 +35,7 @@ async def mute_user(bot, message):
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"
-                " The mouth is closed! 🤐"
+                " The mouth is closed!"
             )
             await bot.send_message(LOG_CHANNEL, text=f"**MUTE**\n\n**USER**: <a href='tg://user?id={user_id}'>{user_first_name}</a>\n\n**USER ID**:`{user_id}`\n\n**PERMISSIONS: MUTED**\n\nin **CHAT NAME**: {message.chat.title}\n**CHAT ID** `{message.chat.id}`\n\n\n**POWERD BY:** {temp.B_LINK}")
         
@@ -78,14 +78,14 @@ async def temp_mute_user(bot, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "Be quiet for a while! 😠"
+                "Be quiet for a while!"
                 f"{user_first_name}"
                 f" muted for {message.command[1]}!"
             )
             await bot.send_message(LOG_CHANNEL, text=f"**MUTE**\n\n**USER**: <a href='tg://user?id={user_id}'>{user_first_name}</a>\n\n**USER ID**:`{user_id}`\n\n**PERMISSIONS: MUTED**\n\nin **CHAT NAME**: {message.chat.title}\n**CHAT ID** `{message.chat.id}`\n\n\n**POWERD BY:** {temp.B_LINK}")
         else:
             await message.reply_text(
-                "Be quiet for a while! 😠"
+                "Be quiet for a while!"
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"

@@ -16,7 +16,7 @@ def check_sk(key):
     else:
         type = ''
     if status == 200 or type == 'card_error':
-        r_text, r_logo, r_respo = 'ᴠᴇʟɪᴅ ᴀᴘɪ ᴋᴇʏ', '✅', 'ᴠᴇʟɪᴅ ᴀᴘɪ ᴋᴇʏ'
+        r_text, r_logo, r_respo = 'ᴠᴇʟɪᴅ ᴀᴘɪ ᴋᴇʏ', 'ᴠᴇʟɪᴅ ᴀᴘɪ ᴋᴇʏ'
     else:
         if 'error' in first.json():
             if 'code' in first.json()['error']:
@@ -26,7 +26,7 @@ def check_sk(key):
         else:
             r_res = 'ɪɴᴠᴀʟɪᴅ ᴀᴘɪ ᴋᴇʏ'
 
-        r_text, r_logo, r_respo = 'ɪɴᴠᴀʟɪᴅ ᴀᴘɪ ᴋᴇʏ', '❌', r_res
+        r_text, r_logo, r_respo = 'ɪɴᴠᴀʟɪᴅ ᴀᴘɪ ᴋᴇʏ', '', r_res
     return r_text, r_logo, r_respo
 
 @Client.on_message(filters.command("sk"))
@@ -44,7 +44,7 @@ async def sk_checker(_, message):
         await message.reply(text)
     else:
         text = f"""
-        {r_text} ❌\n\n**ᴋᴇʏ** - <code>{data[1]}</code>\n[{r_respo}]
+        {r_text} \n\n**ᴋᴇʏ** - <code>{data[1]}</code>\n[{r_respo}]
         """
         await message.reply(text)
 
@@ -54,13 +54,13 @@ async def long_genskey(_, message):
     pos = requests.post(url="https://api.stripe.com/v1/tokens", headers={'Content-Type': 'application/x-www-form-urlencoded'}, data={'card[number]': '5159489701114434','card[cvc]': '594','card[exp_month]': '09','card[exp_year]': '2023'}, auth=(skkey, ""))
     if (pos.json()).get("error") and not (pos.json()).get("error").get("code") == "card_declined": 
         await message.reply(f"""
-**ᴅᴇᴄᴀʟɪɴᴇᴅ ❌**
+**ᴅᴇᴄᴀʟɪɴᴇᴅ **
 
 **ᴋᴇʏ** - `{skkey}`
 """)
     else:
         await message.reply(f"""
-**ᴀᴘᴘʀᴏᴠᴇᴅ ✅**
+**ᴀᴘᴘʀᴏᴠᴇᴅ**
 
 **ᴋᴇʏ** - `{skkey}`        
 """)
@@ -71,13 +71,13 @@ async def short_genskey(_, message):  # Changed function name to avoid conflict
     pos = requests.post(url="https://api.stripe.com/v1/tokens", headers={'Content-Type': 'application/x-www-form-urlencoded'}, data={'card[number]': '5159489701114434','card[cvc]': '594','card[exp_month]': '09','card[exp_year]': '2023'}, auth=(skkey, ""))
     if (pos.json()).get("error") and not (pos.json()).get("error").get("code") == "card_declined": 
         await message.reply(f"""
-**ᴅᴇᴄᴀʟɪɴᴇᴅ ❌**
+**ᴅᴇᴄᴀʟɪɴᴇᴅ **
 
 **ᴋᴇʏ** - `{skkey}`     
 """)
     else:
         await message.reply(f"""
-**ᴀᴘᴘʀᴏᴠᴇᴅ ✅**
+**ᴀᴘᴘʀᴏᴠᴇᴅ**
 
 **ᴋᴇʏ** - `{skkey}`        
 """)

@@ -2,7 +2,7 @@
 #Licensed under the  AGPL-3.0 License;
 #you may not use this file except in compliance with the License.
 #Author MIKEY
-#if you use our codes try to donate here https://t.me/VeldXd
+#if you use our codes try to donate here https://t.me/icecube9680_bot
 
 from pyrogram import Client, filters, idle
 import pyrogram, asyncio, random, time

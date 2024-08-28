@@ -1,5 +1,5 @@
 """
-STATUS: Code is working. ✅
+STATUS: Code is working.
 """
 
 """

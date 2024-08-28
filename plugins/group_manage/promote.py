@@ -21,7 +21,7 @@ async def promoting(client, message):
      elif not bot_stats.privileges.can_promote_members:
          return await message.reply("i dont have admin rights ")
      elif not user_stats.privileges.can_promote_members:
-         return await message.reply("you need admin rights 😒")
+         return await message.reply("you need admin rights")
      elif user_stats.privileges.can_promote_members:
           msg = await message.reply_text("Promoting")
           await client.promote_chat_member(
@@ -56,7 +56,7 @@ async def demote(client, message):
      elif not bot_stats.privileges.can_promote_members:
          return await message.reply("i dont have admin rights ")
      elif not user_stats.privileges.can_promote_members:
-         return await message.reply("you need admin rights 😒")
+         return await message.reply("you need admin rights")
      elif user_stats.privileges.can_promote_members:
           msg = await message.reply_text("`Proccing...`")
           await client.promote_chat_member(
@@ -72,4 +72,4 @@ async def demote(client, message):
             can_manage_chat=False,
             can_manage_video_chats=False    
 ))
-          await msg.edit(f"Hmm!! demoted 🥺 ")
+          await msg.edit(f"Hmm!! demoted")

@@ -104,7 +104,7 @@ async def check_cc(client, message):
 
         if 'false' in rx.text:
             return await message.reply(f'''
-❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #Declined
 <b>MSG</b>➟ {msg}
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
@@ -113,7 +113,7 @@ async def check_cc(client, message):
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         await message.reply(f'''
-❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ DEAD
 <b>MSG</b>➟ {rx.text}
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)

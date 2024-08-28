@@ -18,9 +18,9 @@ async def google_text(client, message):
             torrent_r = data['results'][0]
           
             tor = f"**File Name:**<code>{torrent_r['name']}</code>\n\n"\
-                  f"**🔖 size:** <code>{torrent_r['size']}</code>\n" \
+                  f"**size:** <code>{torrent_r['size']}</code>\n" \
                   f"**🔗 type:** {torrent_r['type']}\n" \
-                  f"**✨ language:** <code>{torrent_r['language']}</code>\n" \
+                  f"**language:** <code>{torrent_r['language']}</code>\n" \
                   f"**📡 magnetLink:** <code>{torrent_r['magnetLink']}</code>"
     
             await client.send_message(message.chat.id, tor)

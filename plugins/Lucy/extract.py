@@ -38,7 +38,7 @@ async def shazam_(client, message):
         if not message.reply_to_message or not message.reply_to_message.video:
             return await message.reply_text("Reply to a video...")
         thumbnail = wget.download("https://telegra.ph/file/f4f20a3a7b15d588fcc2a.jpg")
-        sd = await client.send_message(LOG_CHANNEL, text=f"#ᴠɪᴅ_ᴛᴏ_ᴀᴜᴅ\n\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\n\nᴀᴜᴅɪᴏ: ❌")
+        sd = await client.send_message(LOG_CHANNEL, text=f"#ᴠɪᴅ_ᴛᴏ_ᴀᴜᴅ\n\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\n\nᴀᴜᴅɪᴏ: ")
         stime = time.time()
         msg = await message.reply_text("Cᴏɴᴠᴇʀᴛɪɴɢ ᴠɪᴅᴇᴏ ᴛᴏ ᴀᴜᴅɪᴏ...\n\nIᴛ ᴍᴀʏ ᴄᴀᴜsᴇs sᴏᴍᴇ ᴛɪᴍᴇ ᴅᴜᴇ ᴛᴏ ᴠɪᴅᴇᴏ ᴅᴜʀᴀᴛɪᴏɴ, sᴏ ᴘʟᴇᴀsᴇ ᴡ𝟾")
         video_file = await message.reply_to_message.download()
@@ -48,7 +48,7 @@ async def shazam_(client, message):
         etime = time.time()
         t_k = round(etime - stime)
         await message.reply_audio(music_file, thumb=thumbnail)
-        await sd.edit(f"#ᴠɪᴅ_ᴛᴏ_ᴀᴜᴅ\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\n\nᴀᴜᴅɪᴏ: ✅\nᴠɪᴅᴇᴏ ᴛᴏ ᴀᴜᴅɪᴏ ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴛɪᴍᴇ: {t_k}")
+        await sd.edit(f"#ᴠɪᴅ_ᴛᴏ_ᴀᴜᴅ\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\n\nᴀᴜᴅɪᴏ:\nᴠɪᴅᴇᴏ ᴛᴏ ᴀᴜᴅɪᴏ ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴛɪᴍᴇ: {t_k}")
         t_taken = await message.reply_text(f"<code>{t_k} Sᴇᴄᴏɴᴅs ғᴏʀ ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴛʜɪs ᴠɪᴅᴇᴏ ᴛᴏ ᴀᴜᴅɪᴏ...</code>")
         await asyncio.sleep(10)
         await t_taken.delete()

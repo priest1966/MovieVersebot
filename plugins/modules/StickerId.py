@@ -24,7 +24,7 @@ I can Provide all Kind of Sticker Options Here """
 
 JOIN_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/team_netflix')
+        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/movieversepremium')
         ]]
     )
 
@@ -60,7 +60,7 @@ async def getstickerasfile(bot, message):
         await tx.edit("Downloaded")
         await tx.edit("Uploading...")
         start = time.time()
-        await message.reply_document(file_path,caption="©Team_Netflix")
+        await message.reply_document(file_path,caption="@movieversepremium")
         await tx.delete()   
         os.remove(file_path)
     except Exception as error:

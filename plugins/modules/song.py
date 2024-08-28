@@ -25,7 +25,7 @@ async def download_songs(query, download_directory="."):
             info = ydl.extract_info(video)
             filename = ydl.prepare_filename(info)
             if not filename:
-                print(f"Track Not Found⚠️")
+                print(f"Track Not Found")
             else:
                 path_link = filename
                 return path_link, info 
@@ -50,8 +50,8 @@ async def song(_, message):
         await message.reply_chat_action(enums.ChatAction.UPLOAD_AUDIO)
         await k.edit("ᴜᴘʟᴏᴀᴅɪɴɢ")
         song_title = info.get("title", "Unknown Title")   
-        song_caption = f"**🍃 {song_title}**\n" + \
-                       f"🍂 sᴜᴘᴘᴏʀᴛ: <a href='https://t.me/weebs_support'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>" 
+        song_caption = f"**{song_title}**\n" + \
+                       f"sᴜᴘᴘᴏʀᴛ: <a href='https://t.me/movieverse_discussion_2'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>" 
 
         await message.reply_audio(
             path,

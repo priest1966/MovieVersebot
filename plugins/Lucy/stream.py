@@ -50,7 +50,7 @@ async def stream_start(client, message):
                 ]
             ] 
         )
-        msg_text = """<i><u>ʙʀᴏ ʜᴇʀᴇ's ʏᴏᴜʀ ɢᴇɴᴇʀᴀᴛᴇᴅ !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b> 🖥ᴡᴀᴛᴄʜ  :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : ʟɪɴᴋ ᴡᴏɴ'ᴛ ᴇxᴘɪʀᴇ ᴛɪʟʟ ɪ ᴅᴇʟᴇᴛᴇ</b>\n\nBaka! Link will be deleted After 1 minutes. Save them to the Saved Message now!.</b>"""
+        msg_text = """<i><u>ʙʀᴏ ʜᴇʀᴇ's ʏᴏᴜʀ ɢᴇɴᴇʀᴀᴛᴇᴅ !</u></i>\n\n<b>Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b>ᴡᴀᴛᴄʜ  :</b> <i>{}</i>\n\n<b>Nᴏᴛᴇ : ʟɪɴᴋ ᴡᴏɴ'ᴛ ᴇxᴘɪʀᴇ ᴛɪʟʟ ɪ ᴅᴇʟᴇᴛᴇ</b>\n\nBaka! Link will be deleted After 1 minutes. Save them to the Saved Message now!.</b>"""
 
         lazy_d = await message.reply_text(text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(msg)), lazy_download, lazy_stream), quote=True, disable_web_page_preview=True, reply_markup=rm)
         await asyncio.sleep(60)

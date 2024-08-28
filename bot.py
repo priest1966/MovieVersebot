@@ -50,7 +50,7 @@ loop = asyncio.get_event_loop()
 
 async def Lazy_start():
     print('\n')
-    print('Initalizing Lucy Bot')
+    print('Initalizing MovieVerse Bot')
     bot_info = await LazyPrincessBot.get_me()
     LazyPrincessBot.username = bot_info.username
     await initialize_clients()
@@ -64,7 +64,7 @@ async def Lazy_start():
             load = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
-            print("Lucy Imported => " + plugin_name)
+            print("Imported => " + plugin_name)
     if ON_HEROKU:
         asyncio.create_task(ping_server())
     b_users, b_chats = await db.get_banned()
@@ -95,4 +95,4 @@ if __name__ == '__main__':
     try:
         loop.run_until_complete(Lazy_start())
     except KeyboardInterrupt:
-        logging.info('Service Stopped Bye 👋')
+        logging.info('Service Stopped Bye')

@@ -16,19 +16,19 @@ async_client: httpx.AsyncClient = httpx.AsyncClient(timeout=120)
 
 class STRINGS:
     REPLY_TO_MEDIA: str = "**ᴘʟᴇᴡsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴄᴏɴᴛᴀɪɴs ᴏɴᴇ ᴏғ ᴛʜᴇ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ ᴛʏᴘᴇs, sᴜᴄʜ ᴀs ᴀ ᴘʜᴏᴛᴏ ᴏʀ ɪᴍᴀɢᴇ ᴀɴᴅ ғɪʟᴇ.**"
-    UNSUPPORTED_MEDIA_TYPE: str = "⚠️ **ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ !**\n**ᴘʟᴇᴡsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴄᴏɴᴛᴀɪɴs ᴏɴᴇ ᴏғ ᴛʜᴇ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ ᴛʏᴘᴇs, sᴜᴄʜ ᴀs ᴀ ᴘʜᴏᴛᴏ ᴏʀ ɪᴍᴀɢᴇ ᴀɴᴅ ғɪʟᴇ.**"
+    UNSUPPORTED_MEDIA_TYPE: str = "**ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ !**\n**ᴘʟᴇᴡsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴄᴏɴᴛᴀɪɴs ᴏɴᴇ ᴏғ ᴛʜᴇ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ ᴛʏᴘᴇs, sᴜᴄʜ ᴀs ᴀ ᴘʜᴏᴛᴏ ᴏʀ ɪᴍᴀɢᴇ ᴀɴᴅ ғɪʟᴇ.**"
     
-    DOWNLOADING_MEDIA: str = "⏳ **ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴍᴇᴅɪᴀ...**"
+    DOWNLOADING_MEDIA: str = "**ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴍᴇᴅɪᴀ...**"
     UPLOADING_TO_API_SERVER: str = "**ᴜᴘʟᴏᴀᴅɪɴɢ ᴍᴇᴅɪᴀ ᴛᴏ ᴀᴘɪ sᴇʀᴠᴇʀ**"
-    PARSING_RESULT: str = "💻 **ᴘᴀʀsɪɴɢ ʀᴇsᴜʟᴛ...**"
+    PARSING_RESULT: str = "**ᴘᴀʀsɪɴɢ ʀᴇsᴜʟᴛ...**"
     
-    EXCEPTION_OCCURRED: str = "❌ **ᴇxᴄᴇᴘᴛɪᴏɴ ᴏᴄᴄᴜʀʀᴇᴅ !**\n\n**ᴇxᴄᴇᴘᴛɪᴏɴ :** {}"
+    EXCEPTION_OCCURRED: str = " **ᴇxᴄᴇᴘᴛɪᴏɴ ᴏᴄᴄᴜʀʀᴇᴅ !**\n\n**ᴇxᴄᴇᴘᴛɪᴏɴ :** {}"
     
     RESULT: str = """
-✒️ <b>ǫᴜᴇʀʏ** :</b> <code>{query}</code>
+<b>ǫᴜᴇʀʏ** :</b> <code>{query}</code>
 ⛓ <b>ᴘᴀɢᴇ ʟɪɴᴋ :</b> <a href="{page_url}">ᴄʟɪᴄᴋ </a>
 
-⏱️ <b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ :</b> <code>{time_taken}</code> **sᴇᴄᴏɴᴅs**"""
+<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ :</b> <code>{time_taken}</code> **sᴇᴄᴏɴᴅs**"""
     OPEN_PAGE: str = "ᴏᴘᴇɴ ᴘᴀɢᴇ"
 
 

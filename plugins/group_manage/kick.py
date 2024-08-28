@@ -77,7 +77,7 @@ def dkick(client, message):
   
 @Client.on_message((filters.channel | filters.group) & filters.command('instatus'))
 def instatus(client, message):
-    sent_message = message.reply_text("🔁 Processing.....")
+    sent_message = message.reply_text("Processing.....")
     recently = 0
     within_week = 0
     within_month = 0

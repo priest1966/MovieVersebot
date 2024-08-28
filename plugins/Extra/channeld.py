@@ -24,7 +24,7 @@ async def info(motech, msg):
         hidden = msg.forward_sender_name
         if hidden:
             await msg.reply(
-                f"❌️𝐄𝐫𝐫𝐨𝐫 <b><i>{hidden}</i></b> ❌️𝐄𝐫𝐫𝐨𝐫",
+                f"️𝐄𝐫𝐫𝐨𝐫 <b><i>{hidden}</i></b> ️𝐄𝐫𝐫𝐨𝐫",
                 quote=True,
             )
         else:

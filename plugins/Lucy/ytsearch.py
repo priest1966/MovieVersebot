@@ -40,7 +40,7 @@ async def ytsearch(_, message: Message):
         i = 0
         text = ""
         while i < 4:
-            text += f"✨ ᴛɪᴛʟᴇ : {results[i]['title']}\n"
+            text += f"ᴛɪᴛʟᴇ : {results[i]['title']}\n"
             text += f"⏱ ᴅᴜʀᴀᴛɪᴏɴ : `{results[i]['duration']}`\n"
             text += f"👀 ᴠɪᴇᴡs : `{results[i]['views']}`\n"
             text += f"📣 ᴄʜᴀɴɴᴇʟ : {results[i]['channel']}\n"
@@ -50,7 +50,7 @@ async def ytsearch(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• ᴜᴘᴅᴀᴛᴇs •", url="https://t.me/codeflix_bots",
+                        "• ᴜᴘᴅᴀᴛᴇs •", url="https://t.me/movieversepremium",
                     ),
                 ]
             ]

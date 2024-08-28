@@ -42,7 +42,7 @@ async def music(client, message):
         }
 
 
-        await client.send_message(message.chat.id, f"ʜᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ {query}\n\n🎤 ᴀʀᴛɪsᴛ: {song_info['artist']}\n🎧 ᴛɪᴛʟᴇ: {song_info['title']}\n⌛ ᴅᴜʀᴀᴛɪᴏɴ: {song_info['duration']} sᴇᴄᴏɴᴅs\n\nʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜɪs sᴏɴɢ ғʀᴏᴍ ᴄʜʀᴏᴍᴇ: {song_info['preview_url']}")
+        await client.send_message(message.chat.id, f"ʜᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ {query}\n\nᴀʀᴛɪsᴛ: {song_info['artist']}\nᴛɪᴛʟᴇ: {song_info['title']}\nᴅᴜʀᴀᴛɪᴏɴ: {song_info['duration']} sᴇᴄᴏɴᴅs\n\nʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜɪs sᴏɴɢ ғʀᴏᴍ ᴄʜʀᴏᴍᴇ: {song_info['preview_url']}")
 
 
         await client.send_chat_action(message.chat.id, "upload_audio")

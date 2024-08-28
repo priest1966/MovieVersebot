@@ -24,14 +24,14 @@ async def check_bin(client, message):
     try:
         resp = await safone.bininfo(bin)
         await aux.edit(f"""
-<b> 𝗩𝗔𝗟𝗜𝗗 𝗕𝗜𝗡 ✅</b>
+<b> 𝗩𝗔𝗟𝗜𝗗 𝗕𝗜𝗡</b>
 <b>┏━◆</b>
 <b>┣〖🏦 ʙᴀɴᴋ</b> ⇾<tt>{resp.bank}</tt>
 <b>┣〖💳 ʙɪɴ</b> ⇾<tt>{resp.bin}</tt>
 <b>┣〖🏡 ᴄᴏᴜɴᴛʀʏ</b> ⇾<tt>{resp.country}</tt>
 <b>┣〖🇮🇳 ғʟᴀɢ</b> ⇾<tt>{resp.flag}</tt>
-<b>┣〖🧿 ɪsᴏ</b> ⇾<tt>{resp.iso}</tt>
-<b>┣〖⏳ ʟᴇᴠᴇʟ</b> ⇾<tt>{resp.level}</tt>
+<b>┣〖ɪsᴏ</b> ⇾<tt>{resp.iso}</tt>
+<b>┣〖ʟᴇᴠᴇʟ</b> ⇾<tt>{resp.level}</tt>
 <b>┣〖🔴 ᴘʀᴇᴘᴀɪᴅ</b> ⇾<tt>{resp.prepaid}</tt>
 <b>┣〖🆔 ᴛʏᴘᴇ</b> ⇾<tt>{resp.type}</tt>
 <b>┣〖ℹ️ ᴠᴇɴᴅᴏʀ</b> ⇾<tt>{resp.vendor}</tt>

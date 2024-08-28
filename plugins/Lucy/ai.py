@@ -95,7 +95,7 @@ async def chat_gpt(bot, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "**ʜᴇʏ ʙᴀʙᴇ, ɪ ᴀᴍ ʟᴜᴄʏ ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏᴅᴀʏ?**"
+                "**ʜᴇʏ ʙᴀʙᴇ, ɪ ᴀᴍ MovieVerse ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏᴅᴀʏ?**"
             )
         else:
             a = message.text.split(' ', 1)[1]
