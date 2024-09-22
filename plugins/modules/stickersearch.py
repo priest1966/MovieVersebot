@@ -8,7 +8,7 @@ async def google_text(client, message):
     try:
         user_query = message.text.split()[1:]
         if not user_query:
-            await message.reply_text("please provide a query <code>/stickers gojo</code>")
+            await message.reply_text("Please provide a query <code>/stickers gojo</code>")
             return
         encoded_query = " ".join(user_query).replace(" ", "%20")
 

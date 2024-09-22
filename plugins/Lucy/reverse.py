@@ -26,7 +26,7 @@ class STRINGS:
     
     RESULT: str = """
 <b>ǫᴜᴇʀʏ** :</b> <code>{query}</code>
-⛓ <b>ᴘᴀɢᴇ ʟɪɴᴋ :</b> <a href="{page_url}">ᴄʟɪᴄᴋ </a>
+<b>ᴘᴀɢᴇ ʟɪɴᴋ :</b> <a href="{page_url}">ᴄʟɪᴄᴋ </a>
 
 <b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ :</b> <code>{time_taken}</code> **sᴇᴄᴏɴᴅs**"""
     OPEN_PAGE: str = "ᴏᴘᴇɴ ᴘᴀɢᴇ"

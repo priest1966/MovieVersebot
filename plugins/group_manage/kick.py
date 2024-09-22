@@ -110,4 +110,4 @@ def instatus(client, message):
         if user.status in (enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.OWNER, ADMINS):
             sent_message.edit(f"{message.chat.title}\nChat Member Status\n\nRecently - {recently}\nWithin Week - {within_week}\nWithin Month - {within_month}\nLong Time Ago - {long_time_ago}\n\nDeleted Account - {deleted_acc}\nBot - {bot}\nUnCached - {uncached}")
         else:
-            sent_message.edit("you are not administrator in this chat")
+            sent_message.edit("You are not administrator in this chat")

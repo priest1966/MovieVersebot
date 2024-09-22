@@ -33,7 +33,7 @@ async def ytsearch(_, message: Message):
         pass
     try:
         if len(message.command) < 2:
-            return await message.reply_text("» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ !")
+            return await message.reply_text("» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ  !")
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("🔎")
         results = YoutubeSearch(query, max_results=4).to_dict()
@@ -41,10 +41,10 @@ async def ytsearch(_, message: Message):
         text = ""
         while i < 4:
             text += f"ᴛɪᴛʟᴇ : {results[i]['title']}\n"
-            text += f"⏱ ᴅᴜʀᴀᴛɪᴏɴ : `{results[i]['duration']}`\n"
-            text += f"👀 ᴠɪᴇᴡs : `{results[i]['views']}`\n"
-            text += f"📣 ᴄʜᴀɴɴᴇʟ : {results[i]['channel']}\n"
-            text += f"🔗 ʟɪɴᴋ : https://youtube.com{results[i]['url_suffix']}\n\n"
+            text += f"ᴅᴜʀᴀᴛɪᴏɴ : `{results[i]['duration']}`\n"
+            text += f"ᴠɪᴇᴡs : `{results[i]['views']}`\n"
+            text += f"ᴄʜᴀɴɴᴇʟ : {results[i]['channel']}\n"
+            text += f"ʟɪɴᴋ : https://youtube.com{results[i]['url_suffix']}\n\n"
             i += 1
         key = InlineKeyboardMarkup(
             [

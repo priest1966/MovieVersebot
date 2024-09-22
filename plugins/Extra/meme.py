@@ -17,7 +17,7 @@ def meme_command(client, message):
         title = data.get("title")
 
         # Mention the bot username in the caption
-        caption = f"{title}\n\nRequest by {message.from_user.mention}\nUpdates @movieVerse_2_bot: "
+        caption = f"{title}\n\nRequest by {message.from_user.mention}\nUpdates <b>[MovieVerse](https://t.me/movieversepremium)</b>: "
 
         # Send the meme image to the user with the modified caption
         message.reply_photo(

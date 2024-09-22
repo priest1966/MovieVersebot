@@ -18,7 +18,7 @@ async def autoapprove(client, message: ChatJoinRequest):
             
         ]]
         markup = InlineKeyboardMarkup(buttons)
-        caption = f"<b>ʜᴇʏ {message.from_user.mention()},\n\n ʙᴀʙʏ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {message.chat.title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.</b>"
+        caption = f"<b>ʜᴇʏ {message.from_user.mention()},\n\n  ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {message.chat.title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.</b>"
         await client.send_photo(
             message.from_user.id, 
             photo='https://graph.org/file/69386e6ea5e78ec793b0c.jpg', 

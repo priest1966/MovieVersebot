@@ -8,7 +8,7 @@ import requests,os,wget
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import asyncio
 from info import LOG_CHANNEL
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs', url='https://t.me/movieversepremium/33')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs', url='https://t.me/movieversepremium/7')]])
 A = """{} with user id:- {} used /saavn command."""
 B = """{} with user id:- {} used /vsaavn command."""
 
@@ -20,19 +20,17 @@ START_MESSAGE = """
 
 
 
-
-𝐅𝐨𝐫 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 :-
-/ssong 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐬𝐚𝐚𝐯𝐧 𝐦𝐩𝟑 𝐬𝐨𝐧𝐠
-/svideo 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐬𝐚𝐚𝐯𝐧 𝐦𝐩𝟒 𝐬𝐨𝐧𝐠
-/ysong 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐦𝐩𝟑 𝐬𝐨𝐧𝐠
-/yvideo 𝐀𝐥𝐨𝐧𝐞✔️ =-= 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐦𝐩𝟒 𝐬𝐨𝐧𝐠
-
-/𝐬𝐚𝐚𝐯𝐧 𝐀𝐥𝐨𝐧𝐞 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 ️
-/𝐯𝐦𝐩𝟒 𝐀𝐥𝐨𝐧𝐞 𝐔𝐧𝐝𝐨️
-/𝐲𝐬𝐨𝐧𝐠 𝐀𝐥𝐨𝐧𝐞 𝐒𝐨𝐧𝐠️
-/𝐲𝐯𝐢𝐝𝐞𝐨 𝐀𝐥𝐨𝐧𝐞 𝐍𝐞𝐰️</a>
-𝐎𝐰𝐧𝐞𝐫 𝐍𝐚𝐦𝐞 :- {}
-𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞 :- {}
+For Example :- 
+/ssong Alone = saavan mp3 song
+/svideo Alone =  saavan video song
+/ysong Alone =   youtube mp3 song
+/yvideo Alone = youtube mp4 song
+/saavan Alone English
+/vmp4 Alone Undo
+/ysong Alone Song
+/yvideo Alone New</a>
+Owner Name :- {}
+Group Name :- {}
 """
 
 
@@ -70,10 +68,10 @@ async def video(client, message):
         InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url="https://t.me/movieverse_discussion_2")
     ]]                           
     await message.reply_video(
-    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @movieversepremium ",thumb=thumbnail,
+    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from <b>[MovieVerse](https://t.me/movieversepremium)</b>",thumb=thumbnail,
     reply_markup=InlineKeyboardMarkup(buttons)
 )
-    await message.reply_text(text="download flac song @flac_english")
+    await message.reply_text(text="Download flac song @flac_english")
     os.remove(ffile)
     os.remove(thumbnail)
     await pak.delete()

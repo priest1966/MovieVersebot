@@ -28,11 +28,6 @@ async def set_chat_description(bot, message):
     await bot.set_chat_description(message.chat.id, description=description)
 
 
-
-
-
-
-
 @Client.on_message(filters.command(["poll"]))
 async def who_is(bot, message):
     

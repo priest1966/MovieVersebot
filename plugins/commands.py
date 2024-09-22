@@ -71,11 +71,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton(text="🏡", callback_data="start"),
-                    InlineKeyboardButton(text="🛡", callback_data="group_info"),
-                    InlineKeyboardButton(text="💳", callback_data="about"),
-                    InlineKeyboardButton(text="💸", callback_data="shortlink_info"),
-                    InlineKeyboardButton(text="🖥", callback_data="main"),
+                    InlineKeyboardButton(text="Home", callback_data="start"),
+                    InlineKeyboardButton(text="Group Info", callback_data="group_info"),
+                ],[
+                    InlineKeyboardButton(text="About", callback_data="about"),
+                    InlineKeyboardButton(text="Shortlink", callback_data="shortlink_info"),
+                ],[
+                    InlineKeyboardButton(text="Main", callback_data="main"),
                 ],[
                     InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
@@ -96,13 +98,13 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ"
-        m=await message.reply_text("ʜᴇʟʟᴏ ʙᴀʙʏ, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙᴀʙʏ . . .")
+        m=await message.reply_text("ʜᴇʟʟᴏ , ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ  . . .")
         await asyncio.sleep(0.4)
         await m.edit_text("🎊")
         await asyncio.sleep(0.5)
         await m.edit_text("⚡")
         await asyncio.sleep(0.5)
-        await m.edit_text("ꜱᴛᴀʀᴛɪɴɢ ʙᴀʙʏ...")
+        await m.edit_text("ꜱᴛᴀʀᴛɪɴɢ ...")
         await asyncio.sleep(0.4)
         await m.delete()        
         m=await message.reply_sticker("CAACAgUAAxkBAAECroBmQKMAAQ-Gw4nibWoj_pJou2vP1a4AAlQIAAIzDxlVkNBkTEb1Lc4eBA") 
@@ -151,11 +153,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton(text="🏡", callback_data="start"),
-                    InlineKeyboardButton(text="🛡", callback_data="group_info"),
-                    InlineKeyboardButton(text="💳", callback_data="about"),
-                    InlineKeyboardButton(text="💸", callback_data="shortlink_info"),
-                    InlineKeyboardButton(text="🖥", callback_data="main"),
+                    InlineKeyboardButton(text="Home", callback_data="start"),
+                    InlineKeyboardButton(text="Group Info", callback_data="group_info"),
+                ],[
+                    InlineKeyboardButton(text="About", callback_data="about"),
+                    InlineKeyboardButton(text="Shortlink", callback_data="shortlink_info"),
+                ],[
+                    InlineKeyboardButton(text="Main", callback_data="main"),
                 ],[
                     InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
@@ -176,13 +180,13 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ"
-        m=await message.reply_text("ʜᴇʟʟᴏ ʙᴀʙʏ, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙᴀʙʏ . . .")
+        m=await message.reply_text("ʜᴇʟʟᴏ , ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ  . . .")
         await asyncio.sleep(0.4)
         await m.edit_text("🎊")
         await asyncio.sleep(0.5)
         await m.edit_text("⚡")
         await asyncio.sleep(0.5)
-        await m.edit_text("ꜱᴛᴀʀᴛɪɴɢ ʙᴀʙʏ...")
+        await m.edit_text("ꜱᴛᴀʀᴛɪɴɢ ...")
         await asyncio.sleep(0.4)
         await m.delete()        
         m=await message.reply_sticker("CAACAgUAAxkBAAECroBmQKMAAQ-Gw4nibWoj_pJou2vP1a4AAlQIAAIzDxlVkNBkTEb1Lc4eBA") 
@@ -203,7 +207,7 @@ async def start(client, message):
             await message.reply_text("Invalid refer!")
             return
         if user_id == message.from_user.id:
-            await message.reply_text("Hᴇʏ Dᴜᴅᴇ, Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ!\n\nsʜᴀʀᴇ ʟɪɴᴋ ʏᴏᴜʀ ғʀɪᴇɴᴅ ᴀɴᴅ ɢᴇᴛ 10 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛ ɪғ ʏᴏᴜ ᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪɴɢ 100 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀsʜɪᴘ.")
+            await message.reply_text("Hᴇʏ, Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ!\n\nsʜᴀʀᴇ ʟɪɴᴋ ʏᴏᴜʀ ғʀɪᴇɴᴅ ᴀɴᴅ ɢᴇᴛ 10 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛ ɪғ ʏᴏᴜ ᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪɴɢ 100 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀsʜɪᴘ.")
             return
         if referdb.is_user_in_list(message.from_user.id):
             await message.reply_text("Yᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ɪɴᴠɪᴛᴇᴅ ")
@@ -237,7 +241,7 @@ async def start(client, message):
         
     if len(message.command) == 2 and message.command[1] in ["premium"]:
         buttons = [[
-                    InlineKeyboardButton('ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(6497757690))
+                    InlineKeyboardButton('ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(330029937))
                   ],[
                     InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_data')
                   ]]
@@ -501,7 +505,7 @@ async def start(client, message):
                     )
                 )
             filesarr.append(msg)
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>️ɪᴍᴘᴏʀᴛᴀɴᴛ</b>\n\n<b>ᴛʜᴇꜱᴇ ᴠɪᴅᴇᴏꜱ / ꜰɪʟᴇꜱ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ</b> <b><u>10 ᴍɪɴᴜᴛᴇꜱ</u> </b><b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ).</b>\n\n<b><i>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇꜱᴇ ᴠɪᴅᴇᴏꜱ / ꜰɪʟᴇꜱ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ.</i></b>")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>️ɪᴍᴘᴏʀᴛᴀɴᴛ</b>\n\n<b>ᴛʜᴇꜱᴇ ᴠɪᴅᴇᴏꜱ / ꜰɪʟᴇꜱ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ</b> <b><u>10 ᴍɪɴᴜᴛᴇꜱ</u> </b><b>ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ.</b>\n\n<b><i>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇꜱᴇ ᴠɪᴅᴇᴏꜱ / ꜰɪʟᴇꜱ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ.</i></b>")
         await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
@@ -679,7 +683,7 @@ async def channel_info(bot, message):
 async def log_file(bot, message):
     """Send log file"""
     try:
-        await message.reply_document('LUCY BOT.LOG')
+        await message.reply_document('MovieVerse Bot.LOG')
     except Exception as e:
         await message.reply(str(e))
 
@@ -756,7 +760,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʜᴘ')
+    await message.answer('ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : MovieVerse')
     await message.message.edit('ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴀʟʟ ɪɴᴅᴇxᴇᴅ ꜰɪʟᴇꜱ')
 
 
@@ -1004,7 +1008,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʀᴏʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -1012,7 +1016,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʀᴏʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʙᴏᴛ</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -1039,7 +1043,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʀᴏʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʙᴏᴛ</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -1047,7 +1051,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʀᴏʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʙᴏᴛ</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -1074,7 +1078,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʀᴏʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʙᴏᴛ</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -1082,7 +1086,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʀᴏʙᴏᴛ™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\nʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\nʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ MovieVerse ʙᴏᴛ</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -1285,8 +1289,8 @@ async def ginfo(bot, message):
 async def donate_command(client, message):
     buttons = [
         [
-            InlineKeyboardButton("• ᴅᴏɴᴀᴛᴇ • ", url="https://t.me/movieverseplan/8"),
-            InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ •", url="https://t.me/movieversepremium")
+            InlineKeyboardButton("• ᴅᴏɴᴀᴛᴇ • ", url="https://t.me/movieversedonate/2"),
+            InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ •", url="https://t.me/movieverse_discussion_2")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -1376,7 +1380,7 @@ async def refer(bot, message):
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
             photo=random.choice(REFER_PICS),
-            caption=f'<b>» ʜᴇʏ ʙʀᴏ/sɪs {message.from_user.mention},\n\nHᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʀᴇғғᴇʀᴀʟ ʟɪɴᴋ:\nhttps://t.me/{bot.me.username}?start=reff_{message.from_user.id}\n\nSʜᴀʀᴇ ᴛʜɪs ʟɪɴᴋ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ, Eᴀᴄʜ ᴛɪᴍᴇ ᴛʜᴇʏ ᴊᴏɪɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ 10 ʀᴇғᴇʀᴀʟ ᴘᴏɪɴᴛ ᴀɴᴅ ᴀғᴛᴇʀ 100 ᴘᴏɪɴᴛs ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ᴘʀᴇᴍɪᴜᴍ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.</b>',
+            caption=f'<b>» ʜᴇʏ {message.from_user.mention},\n\nHᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʀᴇғғᴇʀᴀʟ ʟɪɴᴋ:\nhttps://t.me/{bot.me.username}?start=reff_{message.from_user.id}\n\nSʜᴀʀᴇ ᴛʜɪs ʟɪɴᴋ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ, Eᴀᴄʜ ᴛɪᴍᴇ ᴛʜᴇʏ ᴊᴏɪɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ 10 ʀᴇғᴇʀᴀʟ ᴘᴏɪɴᴛ ᴀɴᴅ ᴀғᴛᴇʀ 100 ᴘᴏɪɴᴛs ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ᴘʀᴇᴍɪᴜᴍ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.</b>',
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
     )

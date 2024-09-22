@@ -12,8 +12,8 @@ async def report_user(bot, message):
         reporter = str(message.from_user.id)
         mention = message.from_user.mention
         success = True
-        report = f"𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})" + "\n"
-        report += f"𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {message.reply_to_message.link}"
+        report = f"Reporter : {mention} ({reporter})" + "\n"
+        report += f"Message : {message.reply_to_message.link}"
         async for admin in bot.get_chat_members(chat_id=message.chat.id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
             if not admin.user.is_bot: 
                 try:

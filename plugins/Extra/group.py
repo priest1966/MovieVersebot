@@ -43,7 +43,7 @@ def calculate_math(client, message):
 @Client.on_message(filters.command("leavegrp")& filters.user(OWNER_ID))
 async def bot_leave(_, message):
     chat_id = message.chat.id
-    text = f"sᴜᴄᴄᴇssғᴜʟʟʏ   ʟᴇғᴛ  !!."
+    text = f"sᴜᴄᴄᴇssғᴜʟʟʏ ʟᴇғᴛ  !!."
     await message.reply_text(text)
     await Client.leave_chat(chat_id=chat_id, delete=True)
 
@@ -75,6 +75,6 @@ async def search(event):
                     # remove duplicates
                     continue
                 result += f"{title}\n{link}\n\n"
-            prev_and_next_btns = [Button.inline("▶️Next▶️", data=f"next {start+10} {event.text.split()[1]}")]
+            prev_and_next_btns = [Button.inline("Next▶", data=f"next {start+10} {event.text.split()[1]}")]
             await msg.edit(result, link_preview=False, buttons=prev_and_next_btns)
             await session.close()

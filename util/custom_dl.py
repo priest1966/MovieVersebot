@@ -222,7 +222,7 @@ class ByteStreamer:
     
     async def clean_cache(self) -> None:
         """
-        function to clean the cache to reduce memory usage
+        Function to clean the cache to reduce memory usage
         """
         while True:
             await asyncio.sleep(self.clean_timer)

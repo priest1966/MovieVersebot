@@ -84,7 +84,7 @@ async def check_cc(client, message):
 
         if 'true' in rx.text:
             return await message.reply(f'''
-✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #CHARGED 25$
 <b>MSG</b>➟ {msg}
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
@@ -94,7 +94,7 @@ async def check_cc(client, message):
 
         if 'security code' in rx.text:
             return await message.reply(f'''
-✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #CCN
 <b>MSG</b>➟ {msg}
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)

@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_message(filters.command(["wall", "wallpaper"]))
 async def wall(_, message: Message):
-    " ғɪxᴇᴅ ᴡᴀʟʟ ʙʏ ᴍɪᴋᴇʏ"
+    " ғɪxᴇᴅ ᴡᴀʟʟ "
     try:
         text = message.text.split(None, 1)[1]
     except IndexError:

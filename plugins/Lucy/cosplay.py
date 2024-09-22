@@ -6,7 +6,7 @@ from info import BOT_USERNAME
 
 LUCY = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/MovieVerse_2_bot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/MovieVerse_2_bot?startgroup=true"),
     ],
 ]
 

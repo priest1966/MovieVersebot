@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(filters.command(["ytthumb"]))
 async def send_thumbnail(bot, update):
     message = await update.reply_text(
-        text="𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙣𝙜 𝙏𝙝𝙪𝙢𝙗𝙣𝙖𝙞𝙡 ...",
+        text="Generating Thumbnail ...",
         disable_web_page_preview=True,
         quote=True
     )
@@ -30,6 +30,6 @@ async def send_thumbnail(bot, update):
         await message.delete()
     except Exception as error:
         await message.edit_text(
-            text="𝗜𝗻𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱  🤪\n\n➥  𝐆𝐢𝐯𝐞 𝐦𝐞 𝐘𝐓 𝐯𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 !\n\n 𝗘𝘅𝗮𝗺𝗽𝗹𝗲:\n\n`/ytthumb https://youtu.be/9-YmVW4HBPU`",
+            text="Incomplete Command\n\n➥  Give me YT video link with the command !\n\n Example:\n\n`/ytthumb https://youtu.be/9-YmVW4HBPU`",
             disable_web_page_preview=True
         )
