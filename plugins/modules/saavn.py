@@ -71,7 +71,7 @@ async def video(client, message):
     video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from <b>[MovieVerse](https://t.me/movieversepremium)</b>",thumb=thumbnail,
     reply_markup=InlineKeyboardMarkup(buttons)
 )
-    await message.reply_text(text="Download flac song @flac_english")
+    await message.reply_text(text="Download flac song @Spotiverse_bot")
     os.remove(ffile)
     os.remove(thumbnail)
     await pak.delete()

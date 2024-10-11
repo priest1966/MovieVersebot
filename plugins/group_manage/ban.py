@@ -39,4 +39,4 @@ async def temp_ban_user(_, message):
         if str(user_id).lower().startswith("@"):
             await message.reply_text(f"Someone else is dusting off..!\n{user_first_name}\nbanned for {message.command[1]}!")
         else:
-            await message.reply_text(f"Someone else is dusting off..!\n<a href='tg://user?id={user_id}'>Lavane</a>\n banned for {message.command[1]}!")
+            await message.reply_text(f"Someone else is dusting off..!\n<a href='tg://user?id={user_id}'>User</a>\n banned for {message.command[1]}!")
