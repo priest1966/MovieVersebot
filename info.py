@@ -44,9 +44,8 @@ CODE = (environ.get('CODE', 'https://i.ibb.co/Ky1KwGf/photo-2024-06-02-08-44-49.
 REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1c1a3cb814cd719ae3bd3.jpg https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split()
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'shareus.io'))
-
-STREAM_API = (environ.get('STREAM_API', ''))
+STREAM_SITE = (environ.get('STREAM_SITE', 'omegalinks.in'))
+STREAM_API = (environ.get('STREAM_API', '9b3b87cc699f7874fa7193531decf02364770e73'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/howtoverify_97/3'))
 
 # Command
@@ -98,13 +97,13 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001953637842')) #Log channel id 
 DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1001953637842'))
 
 # Verify
-VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
+VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/howtoverify_97/3') # How to open tutorial link for verification
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '9b3b87cc699f7874fa7193531decf02364770e73')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -142,7 +141,7 @@ SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "seas
 QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160P", ""]
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', Flase)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
 
 # Online Stream and Download
 NO_PORT = bool(environ.get('NO_PORT', False))
@@ -152,27 +151,23 @@ if 'DYNO' in environ:
     APP_NAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
-BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'BIND_ADRESS'))
+BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://{}/".format(FQDN)
-
+    "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
-
 SESSION_NAME = str(environ.get('SESSION_NAME', 'movieverse'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'movieverse'))
+name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-
 if 'DYNO' in environ:
     ON_HEROKU = True
     APP_NAME = str(getenv('APP_NAME'))
+
 else:
     ON_HEROKU = False
-
-HAS_SSL = bool(getenv('HAS_SSL', True))
-
+HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
     URL = "https://{}/".format(FQDN)
 else:
