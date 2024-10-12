@@ -181,32 +181,42 @@ async def gen_invite(bot, message):
 async def ban_a_user(bot, message):
     if len(message.command) == 1:
         return await message.reply('Give me a user id / username')
+    
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
-        chat = message.text.split(None, 2)[1]
+        user = message.text.split(None, 2)[1]
     else:
-        chat = message.command[1]
+        user = message.command[1]
         reason = "No reason Provided"
+    
     try:
-        chat = int(chat)
+        user = int(user)
     except:
         pass
+    
     try:
-        k = await bot.get_users(chat)
+        user_info = await bot.get_users(user)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
-    except IndexError:
-        return await message.reply("This might be a channel, make sure its a user.")
+        return await message.reply("This is an invalid user, make sure I have met them before.")
     except Exception as e:
         return await message.reply(f'Error - {e}')
-    else:
-        jar = await db.get_ban_status(k.id)
-        if jar['is_banned']:
-            return await message.reply(f"{k.mention} is already banned\nReason: {jar['ban_reason']}")
-        await db.ban_user(k.id, reason)
-        temp.BANNED_USERS.append(k.id)
-        await message.reply(f"Successfully banned {k.mention}")
+    
+    # Check if the user is already banned in the database
+    ban_status = await db.get_ban_status(user_info.id)
+    if ban_status['is_banned']:
+        return await message.reply(f"{user_info.mention} is already banned\nReason: {ban_status['ban_reason']}")
+    
+    # Ban the user from the chat
+    try:
+        await bot.kick_chat_member(message.chat.id, user_info.id)
+    except Exception as e:
+        return await message.reply(f"Failed to ban user: {e}")
+    
+    # Log the ban in the database
+    await db.ban_user(user_info.id, reason)
+    temp.BANNED_USERS.append(user_info.id)
+    await message.reply(f"Successfully banned {user_info.mention} from the chat\nReason: {reason}")
 
 @Client.on_message(filters.command('unban') & filters.user(ADMINS))
 async def unban_a_user(bot, message):
