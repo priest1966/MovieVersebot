@@ -115,16 +115,36 @@ async def pm_text(bot, message):
     content = message.text
     user = message.from_user.first_name
     user_id = message.from_user.id
-    if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    if user_id in ADMINS: return # ignore admins
+
+    # Ignore commands and hashtags
+    if content.startswith("/") or content.startswith("#"):
+        return
+
+    # Ignore messages from admins
+    if user_id in ADMINS:
+        return
+
+    # Fetch bot username
+    bot_username = bot.me.username
+
+    # Reply to user with a predefined message and inline buttons
     await message.reply_text(
-         text="<b>ʜᴇʏ, ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ... \n\nᴊᴏɪɴ ᴀɴᴅ sᴇᴀʀᴄʜ ʜᴇʀᴇ</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("• ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ • ​ ", url=f"https://t.me/movieverse_discussion_2")]]), disable_web_page_preview=True
+        text="<b>ʜᴇʏ, ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ... \n\nᴊᴏɪɴ ᴀɴᴅ sᴇᴀʀᴄʜ ʜᴇʀᴇ</b>",   
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("• ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ •", url="https://t.me/movieverse_discussion_2")],
+                [InlineKeyboardButton(f"• ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ᴄʜᴀᴛ •", url=f"http://t.me/{bot_username}?startgroup=true")]
+            ]
+        ),
+        disable_web_page_preview=True
     )
+
+    # Log the message in the LOG_CHANNEL
     await bot.send_message(
         chat_id=LOG_CHANNEL,
-        text=f"#MSG\n\nNᴀᴍᴇ : `{user}`\n\nID : `{user_id}`\n\nMᴇssᴀɢᴇ : `{content}`"
+        text=f"#MSG\n\nNᴀᴍᴇ : `{user}`\nID : `{user_id}`\nMᴇssᴀɢᴇ : `{content}`"
     )
+
 
 @Client.on_callback_query(filters.regex(r"^reffff"))
 async def refercall(bot, query):
