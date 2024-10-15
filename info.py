@@ -37,7 +37,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://graph.org/file/bdf74912ff48bcedbe9cc.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/bdf74912ff48bcedbe9cc.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/72dff2b65352ba85d0a34.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/549fd9f3272214acade82.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/b58f576fed14cd645d2cf.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/e2d9b5e15e15daafb64e8.jpg'))
 
 CODE = (environ.get('CODE', 'https://i.ibb.co/Ky1KwGf/photo-2024-06-02-08-44-49.jpg'))
