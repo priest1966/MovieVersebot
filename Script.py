@@ -840,9 +840,9 @@ USAGE:
 • /restart - <code>ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.</code>"""
 
     MANAGEMENT_TXT = """
-👮🏻aᴠᴀɪʟᴀʙʟᴇ ᴛᴏ aᴅᴍɪɴs & mᴏᴅᴇʀᴀᴛᴏʀs.
+aᴠᴀɪʟᴀʙʟᴇ ᴛᴏ aᴅᴍɪɴs & mᴏᴅᴇʀᴀᴛᴏʀs.
 
-🕵🏻 /settings ʟᴇᴛs ʏᴏᴜ ᴍᴀɴᴀɢᴇ ᴀʟʟ ᴛʜᴇ Bᴏᴛ sᴇᴛᴛɪɴɢs ɪɴ ᴀ ɢʀᴏᴜᴘ.
+ /settings ʟᴇᴛs ʏᴏᴜ ᴍᴀɴᴀɢᴇ ᴀʟʟ ᴛʜᴇ Bᴏᴛ sᴇᴛᴛɪɴɢs ɪɴ ᴀ ɢʀᴏᴜᴘ.
  /ban ʙᴀɴ ᴀ ᴜsᴇʀ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.
  /mute ᴘᴜᴛs ᴀ ᴜsᴇʀ ɪɴ ʀᴇᴀᴅ-ᴏɴʟʏ ᴍᴏᴅᴇ. Hᴇ ᴄᴀɴ ʀᴇᴀᴅ ʙᴜᴛ ʜᴇ ᴄᴀɴ'ᴛ sᴇɴᴅ ᴀɴʏ ᴍᴇssᴀɢᴇs.
  /kick kick ᴀ ᴜsᴇʀ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.
@@ -990,7 +990,7 @@ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>ᴠ4.4 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 ● <code>40₹</code> ➛ <u>ᴘʟᴀᴛɪɴᴜᴍ ᴘʟᴀɴ</u> » <code>45 ᴅᴀʏꜱ</code>
 ● <code>50₹</code> ➛ <u>ᴅɪᴀᴍᴏɴᴅ ᴘʟᴀɴ</u> » <code>60 ᴅᴀʏꜱ</code>
 
-ᴜᴘɪ ɪᴅ - <code>dm - @icecube9680</code>
+ᴜᴘɪ ɪᴅ - <code>movieverse@axl</code>
 ǫʀ ᴄᴏᴅᴇ - <a href='https://graph.org/file/e2d9b5e15e15daafb64e8.jpg'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
 
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
@@ -1007,7 +1007,7 @@ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>ᴠ4.4 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 ● <code>40₹</code> ➛ <u>ᴘʟᴀᴛɪɴᴜᴍ ᴘʟᴀɴ</u> » <code>45 ᴅᴀʏꜱ</code>
 ● <code>50₹</code> ➛ <u>ᴅɪᴀᴍᴏɴᴅ ᴘʟᴀɴ</u> » <code>60 ᴅᴀʏꜱ</code>
 
-ᴜᴘɪ ɪᴅ - <code>dm - @icecube9680</code>
+ᴜᴘɪ ɪᴅ - <code>movieverse@axl</code>
 ǫʀ ᴄᴏᴅᴇ - <a href='https://graph.org/file/e2d9b5e15e15daafb64e8.jpg'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
 
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
@@ -1108,7 +1108,7 @@ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>ᴠ4.4 [ Sᴛᴀʙʟᴇ ]</code></b>"""
     
 ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
 
-ᴜᴘɪ ɪᴅ - <code>dm - @icecube9680</code>
+ᴜᴘɪ ɪᴅ - <code>movieverse@axl</code>
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
 
@@ -1130,7 +1130,7 @@ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>ᴠ4.4 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 ● <code>40₹</code> ➛ <u>ᴘʟᴀᴛɪɴᴜᴍ ᴘʟᴀɴ</u> » <code>45 ᴅᴀʏꜱ</code>
 ● <code>50₹</code> ➛ <u>ᴅɪᴀᴍᴏɴᴅ ᴘʟᴀɴ</u> » <code>60 ᴅᴀʏꜱ</code>
 
-ᴜᴘɪ ɪᴅ - <code>dm - @icecube9680</code>
+ᴜᴘɪ ɪᴅ - <code>movieverse@axl</code>
 ǫʀ ᴄᴏᴅᴇ - <a href='https://graph.org/file/e2d9b5e15e15daafb64e8.jpg'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
 
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ ʙʏ ᴜꜱɪɴɢ : /myplan
@@ -1138,7 +1138,7 @@ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>ᴠ4.4 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""    
 
     DEVELOPER_TXT = """
-special Thanks To ❤️ Developer -
+special Thanks To ❤️ Owner -
 
 -Owner [Owner of this bot ]<a href='https://t.me/icecube9680_bot'>IceCube</a>
 """

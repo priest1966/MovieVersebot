@@ -35,16 +35,16 @@ async def github(_, message):
 
                 caption = f"""ɢɪᴛʜᴜʙ ɪɴғᴏ ᴏғ {name}
                 
-ᴜsᴇʀɴᴀᴍᴇ: {username}
-ʙɪᴏ: {bio}
+ᴜsᴇʀɴᴀᴍᴇ: `{username}`
+ʙɪᴏ: {bio}`
 ʟɪɴᴋ: [Here]({url})
-ᴄᴏᴍᴩᴀɴʏ: {company}
-ᴄʀᴇᴀᴛᴇᴅ ᴏɴ: {created_at}
-ʀᴇᴩᴏsɪᴛᴏʀɪᴇs: {repositories}
-ʙʟᴏɢ: {blog}
-ʟᴏᴄᴀᴛɪᴏɴ: {location}
-ғᴏʟʟᴏᴡᴇʀs: {followers}
-ғᴏʟʟᴏᴡɪɴɢ: {following}"""
+ᴄᴏᴍᴩᴀɴʏ: `{company}`
+ᴄʀᴇᴀᴛᴇᴅ ᴏɴ: `{created_at}`
+ʀᴇᴩᴏsɪᴛᴏʀɪᴇs: `{repositories}`
+ʙʟᴏɢ: {blog}`
+ʟᴏᴄᴀᴛɪᴏɴ: `{location}`
+ғᴏʟʟᴏᴡᴇʀs: `{followers}`
+ғᴏʟʟᴏᴡɪɴɢ: `{following}`"""
 
             except Exception as e:
                 print(str(e))

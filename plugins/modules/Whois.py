@@ -12,8 +12,7 @@ anniephoto = [
     "https://telegra.ph/file/07fd9e0e34bc84356f30d.jpg",
     "https://telegra.ph/file/3c4de59511e179018f902.jpg",
     "https://telegra.ph/file/07fd9e0e34bc84356f30d.jpg",
-    "https://telegra.ph/file/3c4de59511e179018f902.jpg",
-    "https://telegra.ph/file/002b98f44394097758551.jpg"
+    "https://telegra.ph/file/3c4de59511e179018f902.jpg"
 ]
 
 # --------------------------------------------------------------------------------- #

@@ -31,5 +31,5 @@ def lyrics(song):
         fin = search(song)
         text = f'**🎶 Sᴜᴄᴄᴇꜱꜰᴜʟʟy Exᴛʀᴀᴄᴛᴇᴅ Lyɪʀɪᴄꜱ Oꜰ {song}**\n\n'
         text += f'`{fin["lyrics"]}`'
-        text += '\n\n\n**Mᴀᴅᴇ Bʏ AI**'
+        text += '\n\n\n**Mᴀᴅᴇ Bʏ MovieVerse**'
         return text

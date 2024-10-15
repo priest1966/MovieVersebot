@@ -44,8 +44,8 @@ CODE = (environ.get('CODE', 'https://i.ibb.co/Ky1KwGf/photo-2024-06-02-08-44-49.
 REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1c1a3cb814cd719ae3bd3.jpg https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split()
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'omegalinks.in'))
-STREAM_API = (environ.get('STREAM_API', '9b3b87cc699f7874fa7193531decf02364770e73'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'shareus.io'))
+STREAM_API = (environ.get('STREAM_API', ''))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/howtoverify_97/3'))
 
 # Command
@@ -124,8 +124,8 @@ IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>File Size:</b> {file_size}\n\n<b>[VLC Player Recommended](https://play.google.com/store/apps/details?id=org.videolan.vlc&pcampaignid=web_share)\n\nCheck Our Premium /Plan</b>\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>[VLC Player Recommended](https://play.google.com/store/apps/details?id=org.videolan.vlc&pcampaignid=web_share)\n\nCheck Our Premium /Plan</b>\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>File Size:</b> {file_size}\n\n<b>Use [MovieVerse Stream](https://t.me/StreamBot992_bot) Bot For Stream Your File.\n\n[VLC Player Recommended](https://play.google.com/store/apps/details?id=org.videolan.vlc&pcampaignid=web_share)\n\nCheck Our Premium /Plan</b>\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>File Name</b>: {file_name}\n\n<b>Use [MovieVerse Stream](https://t.me/StreamBot992_bot) Bot For Stream Your File.\n\n[VLC Player Recommended](https://play.google.com/store/apps/details?id=org.videolan.vlc&pcampaignid=web_share)\n\nCheck Our Premium /Plan</b>\n\n<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{title}</b>\n\n<b>Genres:</b> {genres}\n<b>Rating:</b> {rating}/10 Based on {votes} user ratings.\n<b>Languages: Hindi Or {languages}</b>\n<b>RunTime:</b> {runtime} Minutes\n<b>Release Info:</b> {release_date}\n\n<b>Story Line:</b> {plot}\n\n<b>Download {query} From Here\n\n[MovieVerse Backup](https://t.me/movieversepremium)</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
